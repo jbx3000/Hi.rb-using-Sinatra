@@ -5,6 +5,11 @@ get '/' do
   erb :index
 end
 
+get '/results' do
+  @votes = { 'HAM' => 7, 'PIZ' => 5, 'CUR' => 3 }
+  erb :results
+end
+
 Choices = {
   'HAM' => 'Hamburger',
   'PIZ' => 'Pizza',
