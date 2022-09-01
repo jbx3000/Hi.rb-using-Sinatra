@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'yaml/store'
 
 get '/' do
   @title = 'Welcome to a menu choice list'
